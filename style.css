@@ -38,6 +38,10 @@ body {
   width: 200px;
 }
 
+.bg-mobile {
+  display: none;
+}
+
 h1 {
   color: hsl(0, 6%, 24%);
   text-transform: uppercase;
@@ -148,4 +152,27 @@ small {
 
 form.error small {
   display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    margin: 30px 0;
+    width: 100px;
+  }
+  
+  .left {
+    width: 100%;
+  }
+
+  .right {
+    display: none;
+  }
+
+  .bg-mobile {
+    display: block;
+    width: calc(100% + 80px);
+    margin-left: -40px;
+    margin-right: -40px;
+  }
+
 }
