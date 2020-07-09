@@ -10,6 +10,7 @@ form.addEventListener('submit', (e) => {
     form.classList.add('error');
   } else {
     form.classList.remove('error');
+    document.body.innerHTML = `<div style="display:flex; align-items: center; justify-content: center"><h2>Thank You!</h2></div>`;
   }
 
 });
